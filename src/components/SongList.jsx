@@ -6,7 +6,6 @@ const SongList = ({ songs, viewCounts, handleOpenModal, sortAsc, setSortAsc }) =
         <button
           className="btn-order"
           onClick={() => setSortAsc(!sortAsc)}
-          title={`Ordenar por vistas (${sortAsc ? 'ascendente' : 'descendente'})`}
         >
           <img
             src="/public/icons/down-arrow-solid-24.png"
