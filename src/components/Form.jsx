@@ -22,7 +22,7 @@ const Form = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [sortAsc, setSortAsc] = useState(false);
 
-  // Guardar canciones y vistas en el localStorage
+
   useEffect(() => {
     localStorage.setItem('songs', JSON.stringify(songs));
   }, [songs]);
@@ -54,7 +54,7 @@ const Form = () => {
     setModalOpen(true);
   };
 
-  // Filtrar canciones
+
   const filteredSongs = songs.filter((song) =>
     song.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
