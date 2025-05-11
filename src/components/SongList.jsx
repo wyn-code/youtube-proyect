@@ -1,3 +1,5 @@
+import arrowIcon from '../../public/icons/arrow.png';
+
 const SongList = ({ songs, viewCounts, handleOpenModal, sortAsc, setSortAsc }) => {
   return (
     <div className="global-songs">
@@ -8,8 +10,11 @@ const SongList = ({ songs, viewCounts, handleOpenModal, sortAsc, setSortAsc }) =
           onClick={() => setSortAsc(!sortAsc)}
         >
           <img
-            src="/public/icons/up-arrow-regular-24.png"
+            src={arrowIcon}
             alt="orden"
+            style={{
+              transform: sortAsc ? 'none' : 'rotate(180deg)',
+            }}
           />
         </button>
       </div>
