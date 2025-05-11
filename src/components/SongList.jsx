@@ -8,7 +8,7 @@ const SongList = ({ songs, viewCounts, handleOpenModal, sortAsc, setSortAsc }) =
           onClick={() => setSortAsc(!sortAsc)}
         >
           <img
-            src="/public/icons/arrow.png"
+            src="/public/icons/up-arrow-regular-24.png"
             alt="orden"
             style={{
               transform: sortAsc ? 'none' : 'rotate(180deg)',
