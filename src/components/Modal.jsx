@@ -24,7 +24,7 @@ const Modal = ({ enabled, onClose, videoId }) => {
       <div
         className="modal-content"
         style={{
-          background: '#fff',
+          background: '#23262F',
           padding: '1rem',
           borderRadius: '8px',
           position: 'relative',

@@ -1,4 +1,4 @@
-import arrowIcon from '../../public/icons/arrow.png';
+
 
 const SongList = ({ songs, viewCounts, handleOpenModal, sortAsc, setSortAsc }) => {
   return (
@@ -10,7 +10,7 @@ const SongList = ({ songs, viewCounts, handleOpenModal, sortAsc, setSortAsc }) =
           onClick={() => setSortAsc(!sortAsc)}
         >
           <img
-            src={arrowIcon}
+            src='/public/icons/arrow.png'
             alt="orden"
             style={{
               transform: sortAsc ? 'none' : 'rotate(180deg)',
